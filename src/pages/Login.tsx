@@ -27,7 +27,7 @@ const Login: React.FC = () => {
         }}>
           <Chrome size={32} color="white" />
         </div>
-        <h1>Bem-vindo</h1>
+        <h1>TesteAuth</h1>
         <p className="subtitle">Entre para acessar sua conta</p>
       </div>
 
@@ -41,8 +41,11 @@ const Login: React.FC = () => {
         Entrar com Google
       </button>
 
-      <div style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.875rem', color: 'var(--text-muted)' }}>
-        Seguro e rápido via Supabase
+      <div style={{ marginTop: '2rem', textAlign: 'center', fontSize: '0.875rem' }}>
+        <p style={{ color: 'var(--text-muted)', marginBottom: '0.5rem' }}>Seguro e rápido via Supabase</p>
+        <a href="/privacy" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 'bold' }}>
+          Política de Privacidade
+        </a>
       </div>
     </motion.div>
   );
